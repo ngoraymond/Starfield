@@ -60,6 +60,10 @@ class NormalParticle implements Particle
 		myX+= Math.cos(myAngle)* mySpeed;
 		myY+= Math.sin(myAngle)* mySpeed;
 		opacity+=2;
+		if(keyPressed)
+			myAngle+=Math.PI/128;
+		else
+			myAngle=Math.atan2(myY-(height/2),myX-(width/2));
 		if(myX<0 || myX>width || myY<0 || myY>height){
 				opacity=10;
 				myX=(Math.random()*80)+((width/2)-40);
