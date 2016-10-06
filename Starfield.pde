@@ -13,7 +13,7 @@ void setup()
 		bob[i] = new JumboParticle();
 	}
 	bob[0]=new OddballParticle(width/2,height/2,0);
-	bob[1]=new OddballParticle(((OddballParticle)bob[0]).myX,((OddballParticle)bob[0]).myY,0);
+	bob[1]=new OddballParticle(((OddballParticle)bob[0]).myX,((OddballParticle)bob[0]).myY,5);
 }
 void draw()
 {
