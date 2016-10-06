@@ -22,6 +22,8 @@ void draw()
 	for(int i=0;i<bob.length;i++){
 	bob[i].move();
 	bob[i].show();
+	((OddballParticle)bob[1]).myCentX=((OddballParticle)bob[0]).myX;
+	((OddballParticle)bob[1]).myCentY=((OddballParticle)bob[0]).myY;
 	if(mousePressed){
 			bob[i].speed();
 			((OddballParticle)bob[0]).myCentX=mouseX;
